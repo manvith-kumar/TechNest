@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${TEST_DB_NAME:technest_test}?serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: ${DB_USERNAME:technest}
+    password: ${DB_PASSWORD}
+  flyway:
+    clean-disabled: false
+technest:
+  jwt:
+    secret: test-only-secret-test-only-secret-test-only-1234567890
+  auth:
+    log-reset-links: false

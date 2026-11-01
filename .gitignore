@@ -1,0 +1,25 @@
+# secrets and local config
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# build output and dependencies
+node_modules/
+frontend/dist/
+backend/target/
+*.class
+*.log
+
+# uploaded product images (user content)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# IDE / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.iml
+.DS_Store
+Thumbs.db
